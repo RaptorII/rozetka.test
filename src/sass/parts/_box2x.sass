@@ -1,0 +1,79 @@
+.box2x
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  &__item
+    max-width: 560px
+    height: 520px
+    overflow: hidden
+    position: relative
+    margin-top: 40px
+    display: flex
+    flex-direction: column
+    width: 100%
+    &--head
+      font-size: 48px
+      line-height: 43px
+      text-align: right
+      text-transform: uppercase
+      font-family: $font-Spartan
+    &--txt
+      font-size: 24px
+      color: $color-white
+      font-weight: 300
+      font-family: $font
+      text-align: right
+      margin-top: 25px
+      max-width: 450px
+    &--btn
+      display: flex
+      justify-content: flex-end
+      margin-top: 55px
+      .btn
+        padding: 10px 33px
+    &--img
+      position: absolute
+      top: -15%
+      left: -50%
+      transform: scale(1)
+      transition: $trans-main
+    &:hover
+      .box2x__item--img
+        transform: scale(1.03)
+        transition: $trans-main
+    &--info
+      position: absolute
+      top: 64px
+      right: 30px
+      z-index: 2
+  &__item:nth-child(2n)
+    .box2x
+      &__item
+        &--info
+          right: unset
+          left: 30px
+        &--head
+          text-align: left
+        &--txt
+          text-align: left
+        &--btn
+          justify-content: flex-start
+        &--img
+          top: unset
+          left: unset
+          bottom: -10%
+          right: -25%
+
+
+  &__item:nth-child(1)
+    background: #60b8a3
+  &__item:nth-child(2)
+    background: #557581
+  &__item:nth-child(3)
+    background: #82c9d8
+
+@media screen and (min-width: 1400px)
+  .box2x
+    justify-content: space-between
+    &__item
+      margin-top: 40px

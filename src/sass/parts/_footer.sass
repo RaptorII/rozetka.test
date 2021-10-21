@@ -1,11 +1,47 @@
-.footer
+footer
   color: $color-white
   display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  nav
+    display: flex
+    flex-direction: column
+    a
+      font-size: 24px
+      color: #92a1a9
+      padding: 10px 17px
+      position: relative
+      font-weight: 400
+      text-align: center
 
-@media screen and (min-width: 990px)
-  .footer
-    &__location
-      margin-left: -40px
+
+  .copyright
+    p
+      font-size: 18px
+      color: #7f919b
+      font-weight: 300
+      text-align: center
+      margin-top: 25px
+      margin-bottom: 75px
+
+@media screen and (min-width: 768px)
+  footer
+    nav
       display: flex
-      flex-direction: column
-      width: auto
+      flex-direction: row
+      a
+        padding: 0 17px
+        text-align: unset
+        & + a
+          &:before
+            content: ''
+            display: block
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translate(-50%)
+            width: 5px
+            height: 5px
+            border-radius: 50%
+            background: #92a1a9

@@ -1,25 +1,64 @@
-.header
+header
   display: flex
+  flex-direction: row
   align-items: center
-  //align-content: space-between
   justify-content: space-between
   margin: 0
-  flex-direction: row
-  padding: 0
-  height: 63px
-  background: $color-blue
-  &__logo
+  padding: 63px 0 54px
+
+  .logo
     display: flex
-    font-size: 26px
-    line-height: 26px
-    font-weight: 400
-    font-family: $font-pacifico
-    color: $color-white
+    &__img
+      display: flex
+      img
+        max-width: 100%
     a
       &:after
         content: none
-  &__menu
-    list-style: none
-    padding: 0
-    margin: 0
+  .search
+    display: flex
+    &--container
+      position: relative
+      max-width: 177px
+
+    &__input
+      border: 0
+      border-bottom: 3px solid #63757e
+      outline: none
+      transition: .2s ease-in-out
+      box-sizing: border-box
+      background: none
+      font-size: 24px
+      color: #92a1a9
+      font-weight: 300
+    &__label
+      top: 0
+      left: 0
+      right: 0
+      color: #92a1a9
+      display: flex
+      align-items: center
+      position: absolute
+      font-size: 24px
+      font-weight: 300
+      line-height: 15px
+      cursor: text
+      transition: .2s ease-in-out
+      box-sizing: border-box
+      img
+        margin-left: 2px
+        margin-right: 9px
+    &__input,
+    &__label
+      width: 100%
+    &__input:valid,
+    &__input:focus
+      border-bottom: 3px solid #26a69a
+    &__input:valid + label,
+    &__input:focus + label
+      color: #26a69a
+      font-size: .8rem
+      top: -30px
+      pointer-events: none
+
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -30,16 +30,179 @@
 
 <body>
 
-    <header>
-        header
+    <header class="wrapper">
+        <div class="logo">
+            <div class="logo__img">
+                <img src="images/logo.png" alt="...">
+            </div>
+        </div>
+        <form action="search" class="search">
+            <div class="search--container">
+                <input class="search__input" type="search" id="search__input" autocomplete="off" pattern=".+" required>
+                <label class="search__label" for="search__input">
+                    <img src="images/search.png" alt="...">Search
+                </label>
+            </div>
+        </form>
     </header>
 
     <main>
-        main
+
+
+
+        <div class="wrapper">
+            <div class="box">
+                <img src="images/product/gina-product.png" alt="..." class="box__img">
+                <img src="images/kickstarter-badge.png" alt="..." class="box__badge">
+                <div class="box__info">
+                    <div class="box__info--head">
+                        Gina
+                    </div>
+                    <div class="box__info--txt">
+                        A coffee instrument combining classic coffee techniques with the latest technology
+                    </div>
+                    <div class="box__info--btn">
+                        <button class="btn">
+                            Shop Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="wrapper">
+            <div class="box2x">
+
+                <div class="box2x__item">
+                    <div class="box2x__item--info">
+                        <div class="box2x__item--head">
+                            BEOPLAY A1
+                        </div>
+                        <div class="box2x__item--txt">
+                            The ultra-portable Bluetooth speaker that will travel with you anywhere
+                        </div>
+                        <div class="box2x__item--btn">
+                            <button class="btn">
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                    <img src="images/product/beoplay-a1-product.png" alt="beoplay a1 product" class="box2x__item--img">
+                </div>
+
+                <div class="box2x__item">
+                    <div class="box2x__item--info">
+                        <div class="box2x__item--head">
+                            Leica MP
+                        </div>
+                        <div class="box2x__item--txt">
+                            Focused technology for focused photography
+                        </div>
+                        <div class="box2x__item--btn">
+                            <button class="btn">
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                    <img src="images/product/leica-mp-product.png" alt="leica mp product" class="box2x__item--img">
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="wrapper">
+            <div class="box3x">
+
+                <div class="box3x__item">
+                    <div class="box3x__item--info">
+                        <div class="box3x__item--txt">
+                            The world’s first molecular air purifier.
+                        </div>
+                        <div class="box3x__item--head">
+                            Molekule
+                        </div>
+                        <div class="box3x__item--btn">
+                            <button class="btn">
+                                Details
+                            </button>
+                        </div>
+                    </div>
+                    <img src="images/product/molekule-product2.png" alt="molekule product" class="box3x__item--img">
+                </div>
+
+                <div class="box3x__item">
+                    <div class="box3x__item--info">
+                        <div class="box3x__item--txt">
+                            Bowers &amp; Wilkins
+                        </div>
+                        <div class="box3x__item--head">
+                            P9 Signature
+                        </div>
+                        <div class="box3x__item--btn">
+                            <button class="btn">
+                                Details
+                            </button>
+                        </div>
+                    </div>
+                    <img src="images/product/p9-signature-product2.png" alt="p9 signature product" class="box3x__item--img">
+                </div>
+
+                <div class="box3x__item">
+                    <div class="box3x__item--info">
+                        <div class="box3x__item--txt">
+                            An homage to Dieter Rams
+                        </div>
+                        <div class="box3x__item--head">
+                            DR-II
+                        </div>
+                        <div class="box3x__item--btn">
+                            <button class="btn">
+                                Details
+                            </button>
+                        </div>
+                    </div>
+                    <img src="images/product/dr-II-product2.png" alt="dr II product" class="box3x__item--img">
+                </div>
+
+            </div>
+        </div>
+
     </main>
 
-    <footer>
-        footer.
+    <section class="inbox wrapper">
+        <h4>
+        Get our freshest content delivered to your inbox
+    </h4>
+        <p class="inbox__txt">
+            For the latest stories, news, events, promotions and exclusive offers, sign up today. We know you get a lot of emails, but we promise... ours is the one you want.
+        </p>
+        <form action="subscribe" class="subscribe">
+            <div class="subscribe__container">
+                <input class="subscribe__input" type="email" id="subscribe__input" autocomplete="off" required placeholder="You email">
+            </div>
+            <div class="subscribe__container">
+                <button class="btn">
+                    Subscribe
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="wrapper">
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Search</a>
+            <a href="#">Contact</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </nav>
+        <div class="copyright">
+            <p>
+                © Industrial Design Magazine
+            </p>
+        </div>
     </footer>
 
 

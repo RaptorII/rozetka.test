@@ -1,0 +1,50 @@
+.subscribe
+  margin-top: 55px
+  &__container
+    position: relative
+    + .subscribe__container
+      margin-top: 10px
+    .btn
+      font-size: 18px
+      font-family: $font-Spartan
+      letter-spacing: 2px
+      min-width: 300px
+      position: relative
+      display: block
+      margin: 30px auto
+
+  &__input
+    width: 300px
+    min-width: 300px
+    position: relative
+    display: block
+    margin: 30px auto
+    background: $color-trans
+    border: 3px solid #63757e
+    line-height: 50px
+    text-align: center
+    font-size: 24px
+    color: #92a1a9
+    font-weight: 300
+    font-family: $font
+    transition: $trans-main
+    &:focus::-webkit-input-placeholder
+      color: transparent
+      transition: $trans-main
+    &:focus::-moz-placeholder
+      color: transparent
+      transition: $trans-main
+    &:focus:-moz-placeholder
+      color: transparent
+      transition: $trans-main
+    &:focus:-ms-input-placeholder
+      color: transparent
+      transition: $trans-main
+
+@media screen and (min-width: 768px)
+  .subscribe
+    &__container
+      .btn
+        width: 360px
+    &__input
+      width: 360px

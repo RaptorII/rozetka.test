@@ -1,0 +1,36 @@
+.box
+  position: relative
+  overflow: hidden
+  &__img
+    transform: scale(1)
+    transition: $trans-main
+  &:hover
+    .box__img
+      transform: scale(1.02)
+      transition: $trans-main
+  &__badge
+    position: absolute
+    top: 40px
+    right: 36px
+  &__info
+    position: absolute
+    top: 110px
+    left: 60px
+    &--head
+      font-size: 80px
+      color: $color-white
+      font-family: $font-Spartan
+      text-transform: uppercase
+      margin-bottom: 22px
+    &--txt
+      font-size: 32px
+      color: $color-white
+      width: 415px
+      margin-bottom: 145px
+    &--btn
+      .btn
+        font-family: $font
+        font-weight: 300
+        font-size: 24px
+        text-transform: none
+
