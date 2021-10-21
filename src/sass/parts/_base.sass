@@ -25,13 +25,13 @@ body
   padding: 0
   margin: 0 auto
   background: $color-bgmain
-  //max-width: 1920px
   color: $color-white
 
 .wrapper
-  //max-width: 1360px
   max-width: 1160px
   margin: 0 auto
+  padding-left: 10px
+  padding-right: 10px
 
 h1,
 h2
@@ -65,3 +65,8 @@ h4
   h1,
   h2
     font-size: 80px
+
+@media screen and (min-width: 1180px)
+  .wrapper
+    padding-left: unset
+    padding-right: unset

@@ -2,12 +2,15 @@ header
   display: flex
   flex-direction: row
   align-items: center
-  justify-content: space-between
+  justify-content: center
+  flex-wrap: wrap
   margin: 0
   padding: 63px 0 54px
 
   .logo
     display: flex
+    flex: 1 1 100%
+    justify-content: center
     &__img
       display: flex
       img
@@ -16,6 +19,7 @@ header
       &:after
         content: none
   .search
+    margin-top: 20px
     display: flex
     &--container
       position: relative
@@ -61,4 +65,11 @@ header
       top: -30px
       pointer-events: none
 
-
+@media screen and (min-width: 768px)
+  header
+    flex-wrap: unset
+    justify-content: space-between
+    .logo
+      justify-content: unset
+    .search
+      margin: unset
