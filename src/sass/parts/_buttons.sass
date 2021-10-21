@@ -1,0 +1,61 @@
+.btn-white
+  color: $color-blue
+  position: relative
+  text-align: center
+  background-color: $color-white
+  text-decoration: none
+  transition: $trans-main
+  border: 3px solid $color-blue
+  border-radius: 8px
+  cursor: pointer
+  font-size: 25px
+  font-weight: 700
+  text-transform: uppercase
+  padding: 14px 45px
+  &:hover
+    color: $color-white
+    background-color: $color-blue
+    border: 3px solid $color-blue
+
+.btn-blue
+  color: $color-white
+  position: relative
+  text-align: center
+  background-color: $color-blue
+  text-decoration: none
+  transition: $trans-main
+  border: 3px solid $color-white
+  border-radius: 8px
+  cursor: pointer
+  font-size: 18px
+  font-weight: 700
+  text-transform: uppercase
+  padding: 14px 46px
+  &:hover
+    color: $color-blue
+    background-color: $color-white
+    border: 3px solid $color-blue
+
+a
+  color: $color-black
+  text-decoration: none
+  transition: $trans-main
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    transition: $trans-main
+    bottom: 0
+    left: 50%
+    height: 1px
+    width: 0
+  &:hover
+    &:after
+      content: ''
+      background: $color-black
+      transition: $trans-main
+      position: absolute
+      bottom: 0
+      left: 0
+      height: 1px
+      width: 100%

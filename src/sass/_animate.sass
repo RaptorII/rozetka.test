@@ -1,0 +1,143 @@
+@keyframes show-up
+  0%
+    opacity: 0
+    transform: translateY(50px)
+
+  50%
+    opacity: 0.4
+
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes show-up-one
+  0%
+    opacity: 0
+
+  50%
+    opacity: 0
+    transform: translateY(50px)
+
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes show-up-two
+  0%
+    opacity: 0
+
+  66%
+    opacity: 0
+    transform: translateY(50px)
+
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes show-up-three
+  0%
+    opacity: 0
+
+  75%
+    opacity: 0
+    transform: translateY(50px)
+
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes show-right
+  0%
+    opacity: 0
+    transform: translateX(50px)
+
+  50%
+    opacity: 0.4
+
+  100%
+    opacity: 1
+    transform: translateX(0)
+
+@keyframes show-down
+  0%
+    opacity: 0
+    transform: translateY(-50px)
+
+  50%
+    opacity: 0.4
+
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes show-left
+  0%
+    opacity: 0
+    transform: translateX(-50px)
+
+  50%
+    opacity: 0.4
+
+  100%
+    opacity: 1
+    transform: translateX(0)
+
+.animate
+  opacity: 0
+  animation-play-state: paused
+
+  &.animate-up
+    transform: translateY(50px)
+    &.fade-in
+      animation: show-up .5s
+      transform: translateY(0)
+      opacity: 1
+
+  &.animate-right
+    transform: translateX(50px)
+    &.fade-in
+      animation: show-right .5s
+      transform: translateX(0)
+      opacity: 1
+
+  &.animate-down
+    transform: translateY(-50px)
+    &.fade-in
+      animation: show-down .5s
+      transform: translateY(0)
+      opacity: 1
+
+  &.animate-left
+    transform: translateX(-50px)
+    &.fade-in
+      animation: show-left .5s
+      transform: translateX(0)
+      opacity: 1
+
+  &.fade-in
+    &.delay-One
+      animation: show-up-one 1s ease-in 1
+      animation-play-state: running
+      opacity: 1
+    &.delay-Two
+      animation: show-up-two 1.5s ease-in 1
+      animation-play-state: running
+      opacity: 1
+    &.delay-Three
+      animation: show-up-three 2s ease-in 1
+      animation-play-state: running
+      opacity: 1
+
+
+//stop animation
+@media screen and (max-width: 768px)
+  .animate
+    opacity: 1
+    &.animate-up
+      transform: translateY(0)
+    &.animate-right
+      transform: translateX(0)
+    &.animate-down
+      transform: translateY(0)
+    &.animate-left
+      transform: translateX(0)

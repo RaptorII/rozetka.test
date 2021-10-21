@@ -1,0 +1,48 @@
+{
+  "name": "njk",
+  "version": "1.0.0",
+  "description": "front bilder by RaptorII",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mike",
+  "license": "ISC",
+  "dependencies": {
+    "argv": "0.0.2",
+    "bootstrap": "^5.1.1",
+    "bootstrap3": "^3.3.5",
+    "favicons": "^6.2.2",
+    "gulp": "^4.0.2",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-debug": "^3.2.0",
+    "gulp-favicons": "^2.2.7",
+    "gulp-html-prettify": "0.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-install": "^1.1.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-replace": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgmin": "^3.0.0",
+    "jquery": "^3.4.1",
+    "livereload-js": "^3.3.2",
+    "normalize-css": "^2.3.1",
+    "npm": "^6.14.15",
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-webserver": "^0.1.0",
+    "sass": "^1.38.2"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "IE 10"
+  ]
+}
