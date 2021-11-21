@@ -1,109 +1,163 @@
-<main>
 
-{#    <div class="product">#}
-{#    </div>#}
-    <div class="wrapper">
-        <div class="box">
-            <img src="images/product/gina-product.png" alt="..." class="box__img">
-            <img src="images/kickstarter-badge.png" alt="..." class="box__badge">
-            <div class="box__info">
-                <div class="box__info--head">
-                    Gina
-                </div>
-                <div class="box__info--txt">
-                    A coffee instrument combining classic coffee techniques with the latest technology
-                </div>
-                <div class="box__info--btn">
-                    <button class="btn">
-                        Shop Now
-                    </button>
-                </div>
+<div class="wrapper">
+    <div class="box">
+        <img src="images/product/gina-product.png" alt="..." class="box__img">
+        <img src="images/kickstarter-badge.png" alt="..." class="box__badge">
+        <div class="box__info">
+            <div class="box__info--head">
+                Gina
+            </div>
+            <div class="box__info--txt">
+                A coffee instrument combining classic coffee techniques with the latest technology
+            </div>
+            <div class="box__info--btn">
+                <button class="btn">
+                    Shop Now
+                </button>
             </div>
         </div>
     </div>
+</div>
 
-    {%
-        set items = [
-            {
-                img:'beoplay-a1-product.png',
-                title:'beoplay a1 product',
-                head:'BEOPLAY A1',
-                txt: 'The ultra-portable Bluetooth speaker that will travel with you anywhere'
-            },
-            {
-                img:'leica-mp-product.png',
-                title:'leica mp product',
-                head:'Leica MP',
-                txt: 'Focused technology for focused photography'
-            }
-        ]
-    %}
-    <div class="wrapper">
-        <div class="box2x">
-            {% for item in items %}
-                <div class="box2x__item">
-                    <div class="box2x__item--info">
-                        <div class="box2x__item--head">
-                            {{ item.head }}
-                        </div>
-                        <div class="box2x__item--txt">
-                            {{ item.txt }}
-                        </div>
-                        <div class="box2x__item--btn">
-                            <button class="btn">
-                                Buy
-                            </button>
-                        </div>
+
+{%
+    set items = [
+        {
+            img:'beoplay-a1-product.png',
+            title:'beoplay a1 product',
+            head:'BEOPLAY A1',
+            txt: 'The ultra-portable Bluetooth speaker that will travel with you anywhere'
+        },
+        {
+            img:'leica-mp-product.png',
+            title:'leica mp product',
+            head:'Leica MP',
+            txt: 'Focused technology for focused photography'
+        }
+    ]
+%}
+<div class="wrapper">
+    <div class="box2x">
+        {% for item in items %}
+            <div class="box2x__item">
+                <div class="box2x__item--info">
+                    <div class="box2x__item--head">
+                        {{ item.head }}
                     </div>
-                    <img src="images/product/{{ item.img }}" alt="{{ item.title }}" class="box2x__item--img">
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-
-    {%
-        set items = [
-            {
-                img:'molekule-product2.png',
-                title:'molekule product',
-                head:'Molekule',
-                txt: 'The world’s first molecular air purifier.'
-            },
-            {
-                img:'p9-signature-product2.png',
-                title:'p9 signature product',
-                head:'P9 Signature',
-                txt: 'Bowers & Wilkins'
-            },
-            {
-                img:'dr-II-product2.png',
-                title:'dr II product',
-                head:'DR-II',
-                txt: 'An homage to Dieter Rams'
-            }
-        ]
-    %}
-    <div class="wrapper">
-        <div class="box3x">
-            {% for item in items %}
-                <div class="box3x__item">
-                    <div class="box3x__item--info">
-                        <div class="box3x__item--txt">
-                            {{ item.txt }}
-                        </div>
-                        <div class="box3x__item--head">
-                            {{ item.head }}
-                        </div>
-                        <div class="box3x__item--btn">
-                            <button class="btn">
-                                Details
-                            </button>
-                        </div>
+                    <div class="box2x__item--txt">
+                        {{ item.txt }}
                     </div>
-                    <img src="images/product/{{ item.img }}" alt="{{ item.title }}" class="box3x__item--img">
+                    <div class="box2x__item--btn">
+                        <button class="btn">
+                            Buy
+                        </button>
+                    </div>
                 </div>
-            {% endfor %}
-        </div>
+                <img src="images/product/{{ item.img }}" alt="{{ item.title }}" class="box2x__item--img">
+            </div>
+        {% endfor %}
     </div>
+</div>
 
-</main>
+{%
+    set items = [
+        {
+            img:'molekule-product2.png',
+            title:'molekule product',
+            head:'Molekule',
+            txt: 'The world’s first molecular air purifier.'
+        },
+        {
+            img:'p9-signature-product2.png',
+            title:'p9 signature product',
+            head:'P9 Signature',
+            txt: 'Bowers & Wilkins'
+        },
+        {
+            img:'dr-II-product2.png',
+            title:'dr II product',
+            head:'DR-II',
+            txt: 'An homage to Dieter Rams'
+        }
+    ]
+%}
+<div class="wrapper">
+    <div class="box3x">
+        {% for item in items %}
+            <div class="box3x__item">
+                <div class="box3x__item--info">
+                    <div class="box3x__item--txt">
+                        {{ item.txt }}
+                    </div>
+                    <div class="box3x__item--head">
+                        {{ item.head }}
+                    </div>
+                    <div class="box3x__item--btn">
+                        <button class="btn">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <img src="images/product/{{ item.img }}" alt="{{ item.title }}" class="box3x__item--img">
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{%
+    set items = [
+        {
+            img:'beoplay-a1-product.png',
+            title:'beoplay a1 product',
+            head:'BEOPLAY A1',
+            txt: 'The ultra-portable Bluetooth speaker that will travel with you anywhere'
+        },
+        {
+            img:'leica-mp-product.png',
+            title:'leica mp product',
+            head:'Leica MP',
+            txt: 'Focused technology for focused photography'
+        },
+        {
+            img:'molekule-product2.png',
+            title:'molekule product',
+            head:'Molekule',
+            txt: 'The world’s first molecular air purifier.'
+        },
+        {
+            img:'p9-signature-product2.png',
+            title:'p9 signature product',
+            head:'P9 Signature',
+            txt: 'Bowers & Wilkins'
+        },
+        {
+            img:'dr-II-product2.png',
+            title:'dr II product',
+            head:'DR-II',
+            txt: 'An homage to Dieter Rams'
+        }
+    ]
+%}
+
+<div class="wrapper">
+    <div class="boxg">
+        {% for item in items %}
+            <div class="boxg__item">
+                <div class="boxg__item--info">
+                    <div class="boxg__item--txt">
+                        {{ item.txt }}
+                    </div>
+                    <div class="boxg__item--head">
+                        {{ item.head }}
+                    </div>
+                    <div class="boxg__item--btn">
+                        <button class="btn">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <img src="images/product/{{ item.img }}" alt="{{ item.title }}" class="boxg__item--img">
+            </div>
+        {% endfor %}
+    </div>
+</div>
